@@ -6,7 +6,7 @@ def guessFunction():
     guessCount = 0
     randomNumber = int(random.randint(1, 9))
     while play != False:
-        print(randomNumber, guessCount)
+        # print(randomNumber, guessCount)
         userNumber = input('Please Guess a number between 1 & 9:')
         if userNumber.lower().__contains__('exit'):
             play = False
@@ -22,7 +22,7 @@ def guessFunction():
         elif int(userNumber) == int(randomNumber):
             print('You got it!! Please play again!!')
 
-            play = False
+            # play = False
 
 
 guessFunction()

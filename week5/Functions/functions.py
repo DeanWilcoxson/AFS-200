@@ -1,4 +1,4 @@
-measuredString = input("Please enter a simple sentence: ")
+measuredString = input("Please enter a simple sentence: \n\t")
 uppercaseLetters = 0
 lowercaseLetters = 0
 for letter in range(len(measuredString)):

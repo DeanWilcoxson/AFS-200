@@ -1,11 +1,11 @@
-str = input("Enter a String: ")
-upper = 0
-lower = 0
-for i in range(len(str)):
-    if(str[i] >= 'a' and str[i] <= 'z'):
-        lower += 1
+measuredString = input("Please enter a simple sentence: ")
+uppercaseLetters = 0
+lowercaseLetters = 0
+for letter in range(len(measuredString)):
+    if(measuredString[letter] >= 'a' and measuredString[letter] <= 'z'):
+        lowercaseLetters += 1
 
-    elif(str[i] >= 'A' and str[i] <= 'Z'):
-        upper += 1
-print('Lower case letters =', lower)
-print('Upper case letters =', upper)
+    elif(measuredString[letter] >= 'A' and measuredString[letter] <= 'Z'):
+        uppercaseLetters += 1
+print('Lower case letters =', lowercaseLetters)
+print('Upper case letters =', uppercaseLetters)

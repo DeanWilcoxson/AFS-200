@@ -1,5 +1,5 @@
-def maxNumbers():
-    numbers = [105, 27, 360]
-    maxNumber = max(numbers)
+def maxNumberFunction():
+    numberList = [1.5, 27.6, 3.60]
+    maxNumber = max(numberList)
     print(maxNumber)
-maxNumbers()
+maxNumberFunction()

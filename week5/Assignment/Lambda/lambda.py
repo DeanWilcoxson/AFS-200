@@ -1,5 +1,5 @@
-def new_func(x):
+def lambdaFunction(x):
     return (lambda y: x * y)
 
-t = new_func(3)
-print(t(4))
+secondLambda = lambdaFunction(1000)
+print(secondLambda(1000))

@@ -1,14 +1,21 @@
 from django.contrib.auth.forms import UserCreationForm
+from django.http import Http404
+from django.shortcuts import render
 from django.views import generic
 from django.urls import reverse_lazy
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Question
+from django.template import loader
+from django.shortcuts import get_object_or_404, render
+from .models import Question
 
+def detail(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, 'polls/detail.html', {'question': question})
 
-# Create your views here.
 def hello(request):
-    return HttpResponse('Hello, World. You are at the polls index.');
+    return HttpResponse('Hello, World. You are at the polls index.')
 
 
 def home(request):
@@ -16,7 +23,7 @@ def home(request):
 
 
 def form(request):
-    return render(request, 'form.html',{})
+    return render(request, 'form.html', {})
 
 
 def detail(request, question_id):

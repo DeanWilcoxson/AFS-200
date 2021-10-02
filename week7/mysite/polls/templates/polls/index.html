@@ -12,7 +12,8 @@
 
 <body>
     <h1>Polls App</h1>
-    {% if latest_question_list %}
+    <a href="{%url 'login'%}?next=/">
+        login Page</a> {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
         <li>
